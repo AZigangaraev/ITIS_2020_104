@@ -44,6 +44,12 @@ class ViewController: UIViewController {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("viewWillAppear")
+    }
+
     // MARK: - Programmatical presentation
 
     private let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -52,6 +58,7 @@ class ViewController: UIViewController {
         let modalController: ModalViewController = mainStoryboard.instantiateViewController(identifier: "ModalViewController")
         modalController.inputText = inputTextField.text
         let navigationController = UINavigationController(rootViewController: modalController)
+        navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true, completion: nil)
 //        showDetailViewController(navigationController, sender: nil)
 //        show(navigationController, sender: nil)

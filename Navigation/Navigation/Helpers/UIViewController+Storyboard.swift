@@ -9,6 +9,7 @@ import UIKit
 
 extension UIStoryboard {
     func instantiateWithSameNameIdentifier<T: UIViewController>() -> T {
-        instantiateViewController(identifier: String(describing: T.self))
+        let identifier = String(describing: T.self)
+        return instantiateViewController(identifier: identifier)
     }
 }

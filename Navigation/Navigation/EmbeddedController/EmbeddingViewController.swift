@@ -11,7 +11,9 @@ class EmbeddingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let embeddedController: EmbeddedViewController = UIStoryboard(name: "Main", bundle: nil).instantiateWithSameNameIdentifier()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let embeddedController: EmbeddedViewController = storyboard.instantiateWithSameNameIdentifier()
+        
         addChild(embeddedController)
         view.addSubview(embeddedController.view)
         embeddedController.view.translatesAutoresizingMaskIntoConstraints = false

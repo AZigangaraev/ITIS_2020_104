@@ -11,6 +11,12 @@ class FirstTabController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(cameraTap))
+        navigationItem.title = "First View Controller"
         tabBarItem.title = "First Tab"
+    }
+    
+    @objc private func cameraTap() {
+        print("Вас обнаружили")
     }
 }
