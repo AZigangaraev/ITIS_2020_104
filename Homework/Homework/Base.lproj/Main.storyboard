@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entry View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EntryViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="64"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="lvu-32-fMg">
+            <objects>
+                <viewController title="Profile" id="Zd8-rv-wsD" customClass="ProfileViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Vh-XI-YW7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет, имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-K3-E5X">
+                                <rect key="frame" x="141.5" y="128" width="131.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kxI-a5-s5M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FbU-K3-E5X" firstAttribute="top" secondItem="kxI-a5-s5M" secondAttribute="top" constant="40" id="pSN-Fi-9xU"/>
+                            <constraint firstItem="FbU-K3-E5X" firstAttribute="centerX" secondItem="0Vh-XI-YW7" secondAttribute="centerX" id="s7Z-1J-BSd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ваш профиль" id="fPZ-mE-oS6">
+                        <barButtonItem key="rightBarButtonItem" title="Выйти" id="bVW-p2-cqK">
+                            <connections>
+                                <action selector="exitButtonTapped:" destination="Zd8-rv-wsD" id="NxW-7C-trM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="greetingMessage" destination="FbU-K3-E5X" id="33f-ZF-pVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65O-VC-smp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2818.840579710145" y="450.66964285714283"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="thy-ZM-iBC">
+            <objects>
+                <viewController title="News" id="aHI-IJ-bIU" customClass="NewsViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFV-i3-vWB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO3-CH-UJp">
+                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lorem Ipsum">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="26" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mZ-sc-KXc">
+                                <rect key="frame" x="20" y="148" width="374" height="101.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet leo quis viverra. Proin convallis scelerisque massa, sed maximus dui facilisis ut. at tincidunt orci. Duis semper neque auctor est gravida semper.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFH-mb-hbZ">
+                                <rect key="frame" x="20" y="259.5" width="374" height="30"/>
+                                <state key="normal" title="Смотреть дальше"/>
+                                <connections>
+                                    <action selector="seeMoreButtonTapped:" destination="aHI-IJ-bIU" eventType="touchUpInside" id="6Hi-GL-sdH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MP2-pu-byI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MP2-pu-byI" firstAttribute="trailing" secondItem="OFH-mb-hbZ" secondAttribute="trailing" constant="20" id="5gL-ag-gtS"/>
+                            <constraint firstItem="XO3-CH-UJp" firstAttribute="top" secondItem="MP2-pu-byI" secondAttribute="top" constant="20" id="I2h-gc-My2"/>
+                            <constraint firstItem="OFH-mb-hbZ" firstAttribute="leading" secondItem="MP2-pu-byI" secondAttribute="leading" constant="20" id="V9m-Pp-jrN"/>
+                            <constraint firstItem="OFH-mb-hbZ" firstAttribute="top" secondItem="4mZ-sc-KXc" secondAttribute="bottom" constant="10" id="W5i-hM-s9r"/>
+                            <constraint firstItem="4mZ-sc-KXc" firstAttribute="top" secondItem="XO3-CH-UJp" secondAttribute="bottom" constant="10" id="hWX-9g-x0R"/>
+                            <constraint firstAttribute="trailing" secondItem="4mZ-sc-KXc" secondAttribute="trailing" constant="20" id="kNJ-bH-rot"/>
+                            <constraint firstItem="XO3-CH-UJp" firstAttribute="leading" secondItem="uFV-i3-vWB" secondAttribute="leading" constant="20" id="osw-Nk-hPB"/>
+                            <constraint firstItem="MP2-pu-byI" firstAttribute="trailing" secondItem="XO3-CH-UJp" secondAttribute="trailing" constant="20" id="xIi-ET-oSA"/>
+                            <constraint firstItem="4mZ-sc-KXc" firstAttribute="leading" secondItem="MP2-pu-byI" secondAttribute="leading" constant="20" id="xVw-x3-7T2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новости недели" id="H1O-z7-9di"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udR-pl-ttl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2820.289855072464" y="-227.00892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NVD-0D-bhB">
+            <objects>
+                <navigationController storyboardIdentifier="DetailedNewsNavigationController" modalPresentationStyle="currentContext" id="RMN-z2-BVb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ltf-lr-gaa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="f6M-0f-DBg" kind="relationship" relationship="rootViewController" id="Pzk-SL-MDd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgu-y7-pJP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3779" y="-229"/>
+        </scene>
+        <!--Detailed News-->
+        <scene sceneID="gPZ-NX-vgG">
+            <objects>
+                <viewController title="Detailed News" id="f6M-0f-DBg" customClass="DetailedNewsViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8O-bD-eI1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3i-ni-8Ua">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PRa-hd-a4N">
+                                        <rect key="frame" x="20" y="20" width="374" height="1156"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWe-Yz-JCu">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Lorem Ipsum">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="26" name="Georgia"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHF-d8-Z3B">
+                                                <rect key="frame" x="0.0" y="40" width="374" height="1116"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet leo quis viverra. Proin convallis scelerisque massa, sed maximus dui facilisis ut. Vestibulum auctor ex sed ipsum dapibus, ut venenatis sapien fermentum. Cras in pretium quam. Donec feugiat neque vulputate venenatis pharetra. Aliquam eu risus malesuada, laoreet mauris in, porta sem. Donec faucibus justo quis sodales laoreet. Duis a sapien arcu. Nulla eget lorem id felis commodo euismod. Donec vel convallis odio. Suspendisse gravida erat placerat augue aliquet, vel aliquet nunc interdum. Etiam eu lectus lobortis magna consectetur egestas. Vestibulum feugiat tortor nec quam dignissim sagittis tempus in magna. Nulla facilisi. Nulla in iaculis nulla. Ut mattis pharetra est, id lacinia ante vehicula at.
+
+Morbi laoreet suscipit libero, quis imperdiet magna varius ut. Nulla justo turpis, ultricies in nisi vel, maximus vehicula lacus. Cras viverra gravida libero, vitae faucibus enim. Donec nisl tellus, vehicula quis interdum non, pharetra ac erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vitae orci quis ligula tincidunt elementum. Pellentesque at augue varius, luctus neque ut, finibus orci. Vestibulum molestie pharetra odio, ut consectetur risus condimentum nec. Vestibulum at tincidunt orci. Duis semper neque auctor est gravida semper.
+
+Maecenas varius ligula in risus fringilla pharetra. Fusce varius felis sed felis pulvinar, ut pharetra ex vehicula. Nulla eu sapien vitae dolor tincidunt fermentum. Donec scelerisque odio et dolor hendrerit faucibus. Fusce eu tortor felis. Maecenas nec nisl facilisis, commodo erat nec, efficitur purus. Aenean lobortis at justo ac euismod. Cras convallis eget nunc quis mattis. Etiam imperdiet vehicula mauris et pulvinar. Vestibulum in nibh est. Suspendisse metus velit, sollicitudin eget tortor a, bibendum aliquet est. Mauris porta risus non lacus semper, non fringilla leo rutrum. Aenean ut euismod quam.
+
+Curabitur condimentum at ex et commodo. Etiam ac nulla imperdiet, malesuada leo lobortis, viverra arcu. Morbi dapibus pulvinar scelerisque. Vestibulum vehicula elit nunc, eu porta nisl convallis ut. Ut efficitur venenatis diam eget ornare. Donec blandit egestas faucibus. Phasellus vel convallis neque, at venenatis nisl. Suspendisse eu maximus ligula. Proin sapien sem, auctor quis enim quis, tempor feugiat lectus.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PRa-hd-a4N" firstAttribute="width" secondItem="Y3i-ni-8Ua" secondAttribute="width" constant="-40" id="A9U-5u-6Vx"/>
+                                    <constraint firstAttribute="trailing" secondItem="PRa-hd-a4N" secondAttribute="trailing" constant="20" symbolic="YES" id="Kwv-Fh-fW4"/>
+                                    <constraint firstAttribute="bottom" secondItem="PRa-hd-a4N" secondAttribute="bottom" constant="20" symbolic="YES" id="bLV-BG-Sfx"/>
+                                    <constraint firstItem="PRa-hd-a4N" firstAttribute="leading" secondItem="Y3i-ni-8Ua" secondAttribute="leading" constant="20" symbolic="YES" id="shd-nd-N6e"/>
+                                    <constraint firstItem="PRa-hd-a4N" firstAttribute="top" secondItem="Y3i-ni-8Ua" secondAttribute="top" constant="20" symbolic="YES" id="vZu-Bq-DAc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="StS-rY-yI7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y3i-ni-8Ua" firstAttribute="leading" secondItem="StS-rY-yI7" secondAttribute="leading" id="53y-Z5-C1P"/>
+                            <constraint firstAttribute="bottom" secondItem="Y3i-ni-8Ua" secondAttribute="bottom" id="5H2-VW-ZyR"/>
+                            <constraint firstItem="Y3i-ni-8Ua" firstAttribute="top" secondItem="G8O-bD-eI1" secondAttribute="top" id="BTI-0C-e1N"/>
+                            <constraint firstItem="Y3i-ni-8Ua" firstAttribute="trailing" secondItem="StS-rY-yI7" secondAttribute="trailing" id="s8z-Ce-f7u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Детальный экран новостей" id="MQy-UW-UkI">
+                        <barButtonItem key="leftBarButtonItem" title="Закрыть" id="0E0-qi-3fa">
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="f6M-0f-DBg" id="DKn-LI-VxE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xb3-lJ-FNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4511.594202898551" y="-229.01785714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DCr-96-l30">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="Bxa-GN-jqn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KLp-Bl-RcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IUf-9A-RJ8" kind="relationship" relationship="viewControllers" id="9kP-Xz-56i"/>
+                        <segue destination="0DO-dT-1qC" kind="relationship" relationship="viewControllers" id="ZXz-oC-Y1u"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhN-0b-gr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="64"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SIE-kv-qgg">
+            <objects>
+                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="IUf-9A-RJ8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="house.fill" catalog="system" id="LU6-lc-TkM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CM3-Ge-OPa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aHI-IJ-bIU" kind="relationship" relationship="rootViewController" id="JGc-zW-qFx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHQ-Vv-48S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910.144927536232" y="-227.00892857142856"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="yME-dq-9ar">
+            <objects>
+                <navigationController title="Profile" automaticallyAdjustsScrollViewInsets="NO" id="0DO-dT-1qC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.fill" catalog="system" id="PBh-w0-eiM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Y1-zd-s0j">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zd8-rv-wsD" kind="relationship" relationship="rootViewController" id="Tmd-QV-Rn1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-h4-haz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908.6956521739132" y="450.66964285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
