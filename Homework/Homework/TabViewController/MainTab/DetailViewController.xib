@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Homework" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="en4-Sb-BTy" id="gxg-Jo-ymw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="en4-Sb-BTy">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b1R-XD-efP">
+                    <rect key="frame" x="57.5" y="121" width="299" height="188.5"/>
+                    <color key="tintColor" systemColor="systemGray2Color"/>
+                    <imageReference key="image" image="folder.circle" catalog="system" symbolScale="small" renderingMode="template"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-TS-SYo">
+                    <rect key="frame" x="57.5" y="363" width="299" height="336"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E60-zF-959">
+                    <rect key="frame" x="212" y="731" width="144" height="50"/>
+                    <state key="normal" title="Exit"/>
+                    <connections>
+                        <action selector="exitFromView:" destination="-1" eventType="touchDown" id="wRa-Ds-NCi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="gBA-xW-3bK"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gBA-xW-3bK" firstAttribute="bottom" secondItem="fjP-TS-SYo" secondAttribute="bottom" constant="163" id="25K-YB-hX2"/>
+                <constraint firstItem="E60-zF-959" firstAttribute="width" secondItem="en4-Sb-BTy" secondAttribute="width" multiplier="0.347826" id="3x6-1Q-5xg"/>
+                <constraint firstItem="fjP-TS-SYo" firstAttribute="centerX" secondItem="gBA-xW-3bK" secondAttribute="centerX" id="4B8-IZ-WTB"/>
+                <constraint firstItem="b1R-XD-efP" firstAttribute="top" relation="lessThanOrEqual" secondItem="gBA-xW-3bK" secondAttribute="top" constant="75" id="DTN-W7-JCd"/>
+                <constraint firstItem="fjP-TS-SYo" firstAttribute="leading" secondItem="b1R-XD-efP" secondAttribute="leading" id="IGk-O1-RDa"/>
+                <constraint firstItem="b1R-XD-efP" firstAttribute="width" secondItem="en4-Sb-BTy" secondAttribute="height" multiplier="1:3" id="MVf-j8-Dgm"/>
+                <constraint firstItem="fjP-TS-SYo" firstAttribute="top" secondItem="b1R-XD-efP" secondAttribute="bottom" constant="51" id="SCK-52-uWG"/>
+                <constraint firstItem="fjP-TS-SYo" firstAttribute="centerX" secondItem="b1R-XD-efP" secondAttribute="centerX" id="Vd2-5X-CcP"/>
+                <constraint firstItem="gBA-xW-3bK" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="b1R-XD-efP" secondAttribute="bottom" constant="550" id="XkC-GO-VhC"/>
+                <constraint firstItem="E60-zF-959" firstAttribute="top" secondItem="fjP-TS-SYo" secondAttribute="bottom" constant="32" id="fZG-KM-bXb"/>
+                <constraint firstItem="b1R-XD-efP" firstAttribute="centerX" secondItem="gBA-xW-3bK" secondAttribute="centerX" id="oxg-sv-zHq"/>
+                <constraint firstItem="gBA-xW-3bK" firstAttribute="bottom" secondItem="E60-zF-959" secondAttribute="bottom" constant="81" id="rdp-SM-nti"/>
+                <constraint firstItem="E60-zF-959" firstAttribute="leading" secondItem="gBA-xW-3bK" secondAttribute="leading" constant="212" id="yEI-2m-c3l"/>
+            </constraints>
+            <point key="canvasLocation" x="-542.02898550724638" y="-1189.2857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="folder.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
