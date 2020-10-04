@@ -17,6 +17,6 @@ class FirstTabController: UIViewController {
     }
     
     @objc private func cameraTap() {
-        print("Вас обнаружили")
+        dismiss(animated: true, completion: nil)
     }
 }
