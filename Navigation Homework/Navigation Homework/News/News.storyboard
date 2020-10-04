@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lcn-Y1-eGV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="CAJ-7x-HnD">
+            <objects>
+                <navigationController id="Lcn-Y1-eGV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UgN-XQ-han"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8oU-gr-eJC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="g9P-Jh-UAk" kind="relationship" relationship="rootViewController" id="VKq-Tc-grX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVZ-JG-5KI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-796" y="633"/>
+        </scene>
+        <!--Новости недели-->
+        <scene sceneID="c6I-ay-qfy">
+            <objects>
+                <viewController id="g9P-Jh-UAk" customClass="NewsViewController" customModule="Navigation_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPy-PT-IFa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5n-vH-YSK">
+                                <rect key="frame" x="20" y="129" width="374" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="75-e1586981465263.png" translatesAutoresizingMaskIntoConstraints="NO" id="BWQ-Gp-8fG">
+                                        <rect key="frame" x="8" y="8" width="133" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J05-VC-phc">
+                                        <rect key="frame" x="149" y="0.0" width="210" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Сервис GitHub отказался от использования слова «master» в знак солидарности с протестующими против полицейского насилия и расизма в США. </string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-RS-03W">
+                                        <rect key="frame" x="239" y="149" width="127" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Смотреть дальше"/>
+                                        <connections>
+                                            <action selector="moreInfoButtonTapped:" destination="g9P-Jh-UAk" eventType="touchUpInside" id="qYD-Tr-Wqz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1a8-VW-oBm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новости недели" id="Ciu-zE-bsT"/>
+                    <connections>
+                        <outlet property="gitHubNewsView" destination="g5n-vH-YSK" id="DYP-Rz-4Yq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sF-NO-JjR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="632.8125"/>
+        </scene>
+        <!--Git Hub News View Controller-->
+        <scene sceneID="rUw-fE-19N">
+            <objects>
+                <viewController storyboardIdentifier="GitHubNewsViewController" id="eKc-CH-17w" customClass="GitHubNewsViewController" customModule="Navigation_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BId-MJ-hdl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vzz-g4-8Eg">
+                                <rect key="frame" x="20" y="330" width="374" height="478"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Новое имя, «main», будет использоваться только для новых репозиториев, в уже существующих проектах ветка «master» сохранит свое имя. Все новые репозитории исходного кода, созданные на GitHub, теперь называются «главными». Это изменение связано с тем, чтобы избежать отсылок к рабовладельческим временам в Америке. GitHub cтал одной из многих ИТ-компаний и опенсорсных проектов, которые в последние годы высказались в пользу отказа от различных терминов, которые могут быть истолкованы как оскорбительные с точки зрения чернокожих разработчиков.
+
+Подобные изменения обычно включают в себя отказ от использования терминов master и slave («хозяин» и «раб») в пользу таких альтернатив как main, default, primary. Также устоявшиеся понятия whitelist и blacklist, то есть «черный список» и «белый список»,­ заменяют на нейтральные allow list и deny/exclude list («список разрешений» и «список запретов/исключений»). После смерти Джорджа Флойда и протестов Black Lives Matter в начале этого года, технологические компании показали свою поддержку протестующим и отказались от терминов «мастер», «раб», «черный список» и «белый список».
+
+Компании и крупные проекты с открытым исходным кодом, такие как Microsoft, IBM, Twitter, Red Hat, MySQL, ядро Linux и OpenBSD согласились внести изменения в свой технический лексикон в течение лета 2020 года. GitHub была одной из первых компаний, которая поддержала эти изменения.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-lC-ey6">
+                                <rect key="frame" x="20" y="66" width="374" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Сервис GitHub отказался от использования слова «master» в знак солидарности с протестующими против полицейского насилия и расизма в США. </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-4u-GVe">
+                                <rect key="frame" x="19" y="23" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="goBackButtonTapped:" destination="eKc-CH-17w" eventType="touchUpInside" id="xrY-C6-tjO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="baY-KG-YH4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhx-aZ-ViR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="632.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="75-e1586981465263.png" width="539.25" height="297.75"/>
+    </resources>
+</document>
