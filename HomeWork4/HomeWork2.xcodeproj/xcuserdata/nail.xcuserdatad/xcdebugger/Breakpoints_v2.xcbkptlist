@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "975EF897-7775-46DB-8D82-F4668852997F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C2FDA51-BA88-4F2F-BB6D-D22447E0C129"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeWork2/ThisIsRegistrationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ThisIsRegistrationView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "700FDFE0-FB80-4687-87B9-95E5E8F76DB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeWork2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeWork2/RegistrationViewClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "RegistrationViewClass"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA - 4db02c701b1fef88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2.RegistrationViewClass.passwordTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "HomeWork2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nail/Desktop/HomeWork2/HomeWork2/RegistrationViewClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA - a5b80c4ba241b384"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2.RegistrationViewClass.passwordTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "HomeWork2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nail/Desktop/HomeWork2/HomeWork2/RegistrationViewClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA - 9cde2953685374b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2.RegistrationViewClass.passwordTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "HomeWork2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nail/Desktop/HomeWork2/HomeWork2/RegistrationViewClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA - b7d9299a15cd0fc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2.RegistrationViewClass.passwordTextField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HomeWork2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nail/Desktop/HomeWork2/HomeWork2/RegistrationViewClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA - d88295f6d6d1b3bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2.RegistrationViewClass.init(frame: __C.CGRect) -&gt; HomeWork2.RegistrationViewClass"
+                  moduleName = "HomeWork2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nail/Desktop/HomeWork2/HomeWork2/RegistrationViewClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "ABA43509-E3D6-48AD-9D6F-66D941CE9EDA - d9154bb56713aac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2.RegistrationViewClass.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HomeWork2.RegistrationViewClass&gt;"
+                  moduleName = "HomeWork2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nail/Desktop/HomeWork2/HomeWork2/RegistrationViewClass.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
