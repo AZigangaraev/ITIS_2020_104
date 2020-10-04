@@ -10,8 +10,6 @@ import UIKit
 
 class TapBarController: UITabBarController {
     
-    var name: String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let viewControllers = viewControllers, viewControllers.count == 2 else { return }

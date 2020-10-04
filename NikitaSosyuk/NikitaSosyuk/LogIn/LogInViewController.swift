@@ -58,7 +58,6 @@ class LogInViewController: UIViewController, SignInDelegate, SignUpDelegate {
     func moveToNextView(_ username: String?) {
         let tapBarController: TapBarController = mainStoryboard.instantiateViewController(identifier: "TapBarController")
         tapBarController.modalPresentationStyle = .fullScreen
-        tapBarController.name = username
         present(tapBarController, animated: true, completion: nil)
     }
     
