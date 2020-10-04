@@ -11,8 +11,6 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet var helloLabel: UILabel?
-    
-    public var name: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
