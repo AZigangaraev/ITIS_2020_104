@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YoX-tj-gFn">
+                                <rect key="frame" x="20" y="56" width="374" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qft-si-sTS">
+                                        <rect key="frame" x="75" y="346" width="196" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" Войти">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xvi-mq-VW4"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя пользователя " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wui-2m-9yQ">
+                                        <rect key="frame" x="45" y="273" width="285" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98255760509958356" green="1" blue="0.98660787464068989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTextField" destination="Wui-2m-9yQ" id="uDr-hz-Tem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="116"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="I5V-7E-6wZ">
+            <objects>
+                <viewController id="8Er-cx-a1G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9th-3j-lCe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65k-Pf-jOS">
+                                <rect key="frame" x="0.0" y="10" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Главная" id="inN-GZ-Yw9"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="КФУ наконец-то закрывают на карантин!!!......." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sET-BY-TH4">
+                                <rect key="frame" x="20" y="150" width="374" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ray-aE-NhM">
+                                <rect key="frame" x="68" y="215" width="278" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Смотреть далее ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeFullInfoButton:" destination="YwT-Pp-0rc" eventType="touchUpInside" id="vbw-X1-Uwp"/>
+                                    <segue destination="qdg-AK-ZE1" kind="presentation" id="ZDL-hH-XVw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Njs-me-iIo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Главная" image="arrowshape.turn.up.right.fill" catalog="system" id="csi-ng-kzD"/>
+                    <navigationItem key="navigationItem" id="hGa-JN-NWe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6U-u5-Qj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="YwT-Pp-0rc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="794"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="ule-F6-LBl">
+            <objects>
+                <navigationController id="94s-9X-kad" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.fill" catalog="system" id="H1o-KL-tUK">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Ho-8c-16h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fDI-Yq-F9Q" kind="relationship" relationship="rootViewController" id="A1T-hp-d7I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvq-A3-IHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="-455"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="s5O-s3-T0o">
+            <objects>
+                <viewController id="fDI-Yq-F9Q" customClass="ProfilVIewController" customModule="Task1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yX2-W3-UDj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-E5-rbF">
+                                <rect key="frame" x="53" y="199" width="309" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RQp-yp-EDI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Профиль" id="bvI-yA-I1a">
+                        <barButtonItem key="rightBarButtonItem" title="Назад" id="ca7-ZH-VPT">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButton:" destination="fDI-Yq-F9Q" id="K6O-fp-DUV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="Wqd-E5-rbF" id="EUD-Qh-eb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRz-1x-ZX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2599" y="-440"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="3Vm-XL-dLm">
+            <objects>
+                <navigationController id="FUp-7M-kBN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="arrowshape.turn.up.right.fill" catalog="system" id="DqL-bb-3nd">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qpH-ai-PPk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Er-cx-a1G" kind="relationship" relationship="rootViewController" id="jcZ-V0-D34"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hr-sk-fg0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="794"/>
+        </scene>
+        <!--Full Information View Controller-->
+        <scene sceneID="4ay-Gq-nGz">
+            <objects>
+                <viewController id="qdg-AK-ZE1" customClass="FullInformationViewController" customModule="Task1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K32-L0-G6P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40G-jk-6ir">
+                                <rect key="frame" x="0.0" y="11" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Главные новости " id="bfv-tT-hOo"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eei-lw-En5">
+                                <rect key="frame" x="20" y="100" width="374" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Казанский федеральный университет принимает все необходимые меры по обеспечению безопасных условий обучения — с 19 марта университет временно переходит на работу в электронной информационно-образовательной среде 🏛
+
+Это значит, что на период усиления мер по предупреждению распространения коронавирусной инфекции — предположительно на 3 недели — образовательная деятельность будет проводиться исключительно в электронной информационно-образовательной среде🌐
+
+Эта мера предполагает обеспечение взаимодействия студентов и преподавателей опосредованно, на расстоянии. Такую рекомендацию дало Министерство науки и высшего образования РФ🌿
+
+Отметим, что о каникулах речи не идет. Учебный процесс на период усиления мер по предупреждению распространения коронавирусной инфекции будет проходить без потери академических часов. Образовательные программы будут реализованы в полном объеме. Занятия, проведение которых невозможно без специализированных аудиторий и оборудования, состоятся по специальному расписанию после окончания периода профилактики 🔜</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaD-fO-KoN">
+                                <rect key="frame" x="78" y="642" width="258" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeFullInfoButton:" destination="2FA-Ma-19M" eventType="touchUpInside" id="fW0-Mp-Pyb"/>
+                                    <action selector="comeBackButton:" destination="qdg-AK-ZE1" eventType="touchUpInside" id="7rx-7P-zTT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="g7a-CQ-Eu8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBo-hi-xOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2FA-Ma-19M" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="794"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="G8n-QR-9xg">
+            <objects>
+                <tabBarController storyboardIdentifier="Tabbar" id="QX0-BJ-8g5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GYe-ZL-Jfi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="94s-9X-kad" kind="relationship" relationship="viewControllers" id="MgQ-UL-eIl"/>
+                        <segue destination="FUp-7M-kBN" kind="relationship" relationship="viewControllers" id="WWz-uT-IHR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjf-v9-hhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
