@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlY-Tw-m8O">
-                                <rect key="frame" x="91" y="196" width="41.5" height="21"/>
+                                <rect key="frame" x="113" y="182" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,11 +26,11 @@
                         <viewLayoutGuide key="safeArea" id="IDm-VX-aVd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="top" secondItem="IDm-VX-aVd" secondAttribute="top" constant="152" id="JU0-hI-Yw8"/>
-                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="top" secondItem="IDm-VX-aVd" secondAttribute="top" constant="152" id="POu-PG-6YI"/>
-                            <constraint firstItem="IDm-VX-aVd" firstAttribute="trailing" secondItem="zlY-Tw-m8O" secondAttribute="trailing" constant="281.5" id="Skx-Ka-8fB"/>
-                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="leading" secondItem="IDm-VX-aVd" secondAttribute="leading" constant="91" id="fDg-TU-TuJ"/>
-                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="leading" secondItem="IDm-VX-aVd" secondAttribute="leading" constant="91" id="pqC-Rx-OWQ"/>
+                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="top" secondItem="IDm-VX-aVd" secondAttribute="top" constant="138" id="JU0-hI-Yw8"/>
+                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="top" secondItem="IDm-VX-aVd" secondAttribute="top" constant="138" id="POu-PG-6YI"/>
+                            <constraint firstItem="IDm-VX-aVd" firstAttribute="trailing" secondItem="zlY-Tw-m8O" secondAttribute="trailing" constant="101" id="Skx-Ka-8fB"/>
+                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="leading" secondItem="IDm-VX-aVd" secondAttribute="leading" constant="113" id="fDg-TU-TuJ"/>
+                            <constraint firstItem="zlY-Tw-m8O" firstAttribute="leading" secondItem="IDm-VX-aVd" secondAttribute="leading" constant="113" id="pqC-Rx-OWQ"/>
                         </constraints>
                     </view>
                     <connections>
