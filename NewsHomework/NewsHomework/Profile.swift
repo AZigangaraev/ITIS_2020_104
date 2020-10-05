@@ -13,7 +13,6 @@ class Profile: UIViewController {
     let loginController: LoginViewController? = LoginViewController()
     
     override func viewDidLoad() {
-        loginController?.delegate = self
         logoutButton.setTitle("Выйти", for: .normal)
         logoutButton.setTitleColor(.black, for: .normal)
         }
@@ -23,12 +22,9 @@ class Profile: UIViewController {
     
     @IBAction func logoutButtonClicked(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        
+        if let controller = presentationController as? LoginViewController {
+            profileLabel.text = "Привет,\(controller.textField)"
         }
-}
-    
-extension Profile: LoginDelegate {
-        func sendUsername(username: String) {
-        profileLabel.text = "Привет, \(username)!"
-            
         }
 }
