@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  HomeWork2
 //
-//  Created by Nail on 20.09.2020.
-//  Copyright © 2020 Nail. All rights reserved.
+//  Created by Montypass on 20.09.2020.
+//  Copyright © 2020 Montypass. All rights reserved.
 //
 
 import UIKit
